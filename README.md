@@ -19,11 +19,11 @@ ahn_1       | [2016-12-22 23:34:16.225] INFO  Adhearsion::Events::Handler: Confe
 
 # Requirements
 
-You do need docker and docker-compose. You could get free VPS from Digital Ocean through (my referral link)[https://m.do.co/c/492078597684], 
+You do need docker and docker-compose. You could get free VPS from Digital Ocean through [referral link](https://m.do.co/c/492078597684), 
 and in case you will test on DO server, you may select docker from their 'One-click apps'.
 
 The only one thing that missing there is docker-compose.
-To install docker-compose, follow their instructions: (https://github.com/docker/compose/releases)[https://github.com/docker/compose/releases].
+To install docker-compose, follow their instructions: https://github.com/docker/compose/releases.
 
 # Build
 
