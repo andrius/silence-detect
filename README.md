@@ -46,3 +46,5 @@ docker-compose rm -f
 There is SIP accounts 900 to 901 with password 'somepassword'.
 Just configure SIP phone to use and place call to 801 (echo test), and if it were successful, dial conference at 888.
 
+You do need at least two participants and SIP phones in order to start conference and receive TalkingStatus events.
+
