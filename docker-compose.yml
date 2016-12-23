@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  # asterisk is needed only on dev-machine
+  # on production it's on the host server
+  asterisk:
+    build: asterisk
+    network_mode: host
+    restart: always
+    env_file: .env
+    volumes:
+      - ./asterisk/manager.conf:/etc/asterisk/manager.conf
+      - ./asterisk/sip.conf:/etc/asterisk/sip.conf
+      - ./asterisk/extensions.conf:/etc/asterisk/extensions.conf
+
+  ahn:
+    build: ahn
+    network_mode: host
+    restart: always
+    env_file: .env
+    volumes:
+      - "./ahn:/ahn"
+

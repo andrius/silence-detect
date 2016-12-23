@@ -1,0 +1,8 @@
+# dev files
+.osync_workdir
+deploy.sh
+osync-dev.sh
+
+# credentials
+.env
+
