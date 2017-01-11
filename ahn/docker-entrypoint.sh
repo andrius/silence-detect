@@ -23,17 +23,5 @@ export AHN_CORE_PORT=${ASTERISK_PORT}
 export AHN_CORE_USERNAME=${ASTERISK_MANAGER_USERNAME}
 export AHN_CORE_PASSWORD=${ASTERISK_MANAGER_PASSWORD}
 
-
-# bundle --local
-
-if [ "$1" = "ahn" ]; then
-  exec foreman run -d /ahn -f /ahn/Procfile "$@"
-else
-  if [ "$1" = "" ]; then
-    # This works if CMD is empty or not specified in Dockerfile
-    exec foreman run -d /ahn -f /ahn/Procfile ahn
-  else
-    exec "$@"
-  fi
-fi
+exec "$@"
 

@@ -23,5 +23,5 @@ export AHN_CORE_PORT=${ASTERISK_PORT}
 export AHN_CORE_USERNAME=${ASTERISK_MANAGER_USERNAME}
 export AHN_CORE_PASSWORD=${ASTERISK_MANAGER_PASSWORD}
 
-foreman run ahn
+bundle exec ahn start .
 
