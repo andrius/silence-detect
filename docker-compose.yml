@@ -20,4 +20,8 @@ services:
     env_file: .env
     volumes:
       - "./ahn:/ahn"
+      - ./asterisk/manager.conf:/etc/asterisk/manager.conf
+      - ./asterisk/sip.conf:/etc/asterisk/sip.conf
+      - ./asterisk/extensions.conf:/etc/asterisk/extensions.conf
+
 
