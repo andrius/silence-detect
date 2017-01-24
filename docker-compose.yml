@@ -1,10 +1,8 @@
 version: '2'
 
 services:
-  # asterisk is needed only on dev-machine
-  # on production it's on the host server
   asterisk:
-    build: asterisk
+    image: andrius/docker-asterisk13
     network_mode: host
     restart: always
     env_file: .env
@@ -12,6 +10,7 @@ services:
       - ./asterisk/manager.conf:/etc/asterisk/manager.conf
       - ./asterisk/sip.conf:/etc/asterisk/sip.conf
       - ./asterisk/extensions.conf:/etc/asterisk/extensions.conf
+      - ./asterisk/confbridge.conf:/etc/asterisk/confbridge.conf
 
   ahn:
     build: ahn

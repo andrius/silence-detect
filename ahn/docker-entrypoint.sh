@@ -23,6 +23,5 @@ export AHN_CORE_PORT=${ASTERISK_PORT}
 export AHN_CORE_USERNAME=${ASTERISK_MANAGER_USERNAME}
 export AHN_CORE_PASSWORD=${ASTERISK_MANAGER_PASSWORD}
 
-/usr/sbin/asterisk -vvvdddF -T -W -U root -p && echo 'asterisk started' || echo 'issue with asterisk or it does not present in this docker image'
 exec "$@"
 
